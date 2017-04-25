@@ -34,7 +34,7 @@ AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and k
 
     player createDiaryRecord ["changelog",
         [
-            "Altis Life Changelog",
+            "Altis Life Changelog Test",
                 "
 The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
 v4.4 release 3!<br/>
