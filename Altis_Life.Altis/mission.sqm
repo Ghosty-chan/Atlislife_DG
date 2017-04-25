@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=14;
+	toggles=138;
 	class ItemIDProvider
 	{
-		nextID=1611;
+		nextID=1615;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=94;
+		nextID=107;
 	};
 	class Camera
 	{
-		pos[]={3537.6597,11.83786,12993.473};
-		dir[]={0.59797907,-0.58158714,0.55156446};
-		up[]={0.42751122,0.81347448,0.39432871};
-		aside[]={0.67801732,-1.3993122e-007,-0.73507404};
+		pos[]={3675.2952,22.674437,13083.521};
+		dir[]={-0.15090597,-0.82631379,0.54272819};
+		up[]={-0.22136755,0.56315494,0.7961396};
+		aside[]={0.96350163,-9.0892718e-007,0.267905};
 	};
 };
 binarizationWanted=0;
@@ -288,24 +288,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -320,6 +302,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -377,7 +377,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=405;
+		items=403;
 		class Item0
 		{
 			dataType="Marker";
@@ -10913,7 +10913,8 @@ class Mission
 						position[]={3537.686,46.595036,12404.939};
 						angles[]={6.1480269,0,5.9583621};
 					};
-					init="this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120801; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120809; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121126; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121111; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121118; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121117; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121112; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121113; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121128; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121127; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121116; delh hideObject true;" \n "" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121115; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1121114; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120799; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120800; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128529; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128510; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128666; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128679; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128644; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128668; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128671; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128669; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128670; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128667; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128665; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1128663; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119960; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119956; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119955; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119957; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119959; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119994; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119995; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1119993; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120797; delh hideObject true;" \n "" \n "this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject 1120798; delh hideObject true;";
+					name="dg_HouseRemover";
+					init="dg_deleteids = [1120801,1120809,1121126,1121111,1121118,1121117,1121112,1121113,1121127,1121116,1121115,1121114,1120799,1120800,1128529,1128510,1128666,1128679,1128644,1128668,1128671,1128669,1128670,1128667,1128665,1128663,1119960,1119956,1119955,1119957,1119959,1119994,1119995,1119993,1120797,1120798]; " \n " " \n "{this enableSimulation false; this allowDamage false; delh = [0,0,0] nearestObject _x; delh hideObject true;} forEach dg_deleteids; " \n "";
 					id=1256;
 					type="Logic";
 					atlOffset=0.099822998;
@@ -11814,8 +11815,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3522.479,48.900387,12411.7};
-						angles[]={0.038647637,5.1016808,0.010669862};
+						position[]={3522.479,48.900391,12411.7};
+						angles[]={0,5.1016808,0};
 					};
 					side="Empty";
 					flags=4;
@@ -11824,7 +11825,6 @@ class Mission
 					};
 					id=1258;
 					type="Land_i_House_Big_01_V1_F";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12668,7 +12668,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3628.8149,11.415118,13130.665};
+						position[]={3628.8149,11.515537,13130.665};
 						angles[]={0,0.06735982,0};
 					};
 					side="Empty";
@@ -12678,7 +12678,7 @@ class Mission
 					};
 					id=1346;
 					type="Land_ConcreteWall_02_m_2m_F";
-					atlOffset=0.51019859;
+					atlOffset=0.61061764;
 				};
 				class Item22
 				{
@@ -12816,7 +12816,7 @@ class Mission
 				};
 			};
 			id=1461;
-			atlOffset=0.13232231;
+			atlOffset=0.13251877;
 		};
 		class Item391
 		{
@@ -14688,7 +14688,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3697.5981,11.125732,13145.979};
+						position[]={3697.5979,11.12603,13145.979};
 						angles[]={0,4.7862511,0};
 					};
 					side="Civilian";
@@ -14712,6 +14712,7 @@ class Mission
 					};
 					id=988;
 					type="C_man_1";
+					atlOffset=0.00029754639;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21469,6 +21470,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="Autohaus";
+			state=1;
 			class Entities
 			{
 				items=18;
@@ -39720,54 +39722,6 @@ class Mission
 			id=1604;
 			type="Land_Kiosk_papers_F";
 			atlOffset=-0.017895699;
-		};
-		class Item403
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3537.6663,8.8757591,12994.482};
-					};
-					side="Civilian";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=1609;
-					type="C_man_1";
-					atlOffset=9.5367432e-007;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1608;
-			atlOffset=9.5367432e-007;
-		};
-		class Item404
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3538.374,9.3811874,12996.075};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""chair\sitdown.sqf""]";
-			};
-			id=1610;
-			type="Land_CampingChair_V2_F";
-			atlOffset=0.0003824234;
 		};
 	};
 };
