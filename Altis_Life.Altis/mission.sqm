@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=14;
 	class ItemIDProvider
 	{
-		nextID=1610;
+		nextID=1611;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=81;
+		nextID=94;
 	};
 	class Camera
 	{
-		pos[]={3540.4043,11.83786,12996.499};
-		dir[]={0.021491731,-0.57959729,-0.81462944};
-		up[]={0.015286065,0.81489795,-0.57940382};
-		aside[]={-0.99966091,-5.5444252e-007,-0.026372634};
+		pos[]={3537.6597,11.83786,12993.473};
+		dir[]={0.59797907,-0.58158714,0.55156446};
+		up[]={0.42751122,0.81347448,0.39432871};
+		aside[]={0.67801732,-1.3993122e-007,-0.73507404};
 	};
 };
 binarizationWanted=0;
@@ -288,6 +288,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -302,24 +320,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -377,7 +377,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=404;
+		items=405;
 		class Item0
 		{
 			dataType="Marker";
@@ -39751,6 +39751,23 @@ class Mission
 			};
 			id=1608;
 			atlOffset=9.5367432e-007;
+		};
+		class Item404
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3538.374,9.3811874,12996.075};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""chair\sitdown.sqf""]";
+			};
+			id=1610;
+			type="Land_CampingChair_V2_F";
+			atlOffset=0.0003824234;
 		};
 	};
 };
