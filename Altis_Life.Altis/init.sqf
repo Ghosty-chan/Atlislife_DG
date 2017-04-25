@@ -14,6 +14,7 @@ if (hasInterface) then {
 
 StartProgress = true;
 
+/* Sitfunction
 MAC_fnc_switchMove = {
     private["_object","_anim"];
     _object = _this select 0;
@@ -22,3 +23,4 @@ MAC_fnc_switchMove = {
     _object switchMove _anim;
     
 };
+*/

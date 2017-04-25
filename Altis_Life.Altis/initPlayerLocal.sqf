@@ -16,4 +16,8 @@ if (!hasInterface && !isServer) exitWith {
 CONST(BIS_fnc_endMission,BIS_fnc_endMission);
 if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
 
+//Sitscript
+player setVariable ['QS_seated',FALSE];
+
 [] execVM "core\init.sqf";
+

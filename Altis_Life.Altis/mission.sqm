@@ -8,7 +8,7 @@ class EditorData
 	toggles=138;
 	class ItemIDProvider
 	{
-		nextID=1615;
+		nextID=1622;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=107;
+		nextID=159;
 	};
 	class Camera
 	{
-		pos[]={3675.2952,22.674437,13083.521};
-		dir[]={-0.15090597,-0.82631379,0.54272819};
-		up[]={-0.22136755,0.56315494,0.7961396};
-		aside[]={0.96350163,-9.0892718e-007,0.267905};
+		pos[]={3693.8008,14.258465,13144.695};
+		dir[]={0.52734184,-0.70261306,0.47778872};
+		up[]={0.52069664,0.71155214,0.47176647};
+		aside[]={0.67143828,-3.2695243e-007,-0.74107695};
 	};
 };
 binarizationWanted=0;
@@ -377,7 +377,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=403;
+		items=404;
 		class Item0
 		{
 			dataType="Marker";
@@ -11897,10 +11897,9 @@ class Mission
 		{
 			dataType="Layer";
 			name="Verkehrsamt";
-			state=1;
 			class Entities
 			{
-				items=25;
+				items=24;
 				class Item0
 				{
 					dataType="Object";
@@ -11938,22 +11937,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3698.1946,11.796568,13145.884};
-						angles[]={0,1.6126611,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-					};
-					id=1418;
-					type="Land_OfficeChair_01_F";
-					atlOffset=0.59271622;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={3696.9084,12.125174,13145};
 						angles[]={0,1.100006,0};
 					};
@@ -11965,7 +11948,7 @@ class Mission
 					id=1422;
 					type="Land_Laptop_unfolded_F";
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11981,7 +11964,7 @@ class Mission
 					id=1423;
 					type="Land_PCSet_01_screen_F";
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11997,7 +11980,7 @@ class Mission
 					id=1424;
 					type="Land_PCSet_01_case_F";
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12013,7 +11996,7 @@ class Mission
 					id=1425;
 					type="Land_PCSet_01_mouse_F";
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12029,7 +12012,7 @@ class Mission
 					id=1426;
 					type="Land_PCSet_01_keyboard_F";
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12045,7 +12028,7 @@ class Mission
 					id=1427;
 					type="Land_Notepad_F";
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12061,7 +12044,7 @@ class Mission
 					type="OfficeTable_01_new_F";
 					atlOffset=0.67351055;
 				};
-				class Item10
+				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12077,7 +12060,7 @@ class Mission
 					id=1430;
 					type="Land_PenRed_F";
 				};
-				class Item11
+				class Item10
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12093,7 +12076,7 @@ class Mission
 					type="Land_File1_F";
 					atlOffset=0.018331528;
 				};
-				class Item12
+				class Item11
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12109,7 +12092,7 @@ class Mission
 					id=1433;
 					type="Land_File1_F";
 				};
-				class Item13
+				class Item12
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12125,7 +12108,7 @@ class Mission
 					id=1434;
 					type="Land_File2_F";
 				};
-				class Item14
+				class Item13
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12141,7 +12124,7 @@ class Mission
 					type="Land_FMradio_F";
 					atlOffset=1.5579262;
 				};
-				class Item15
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12157,7 +12140,7 @@ class Mission
 					id=1414;
 					type="OfficeTable_01_new_F";
 				};
-				class Item16
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12174,24 +12157,25 @@ class Mission
 					type="Land_ChairWood_F";
 					atlOffset=0.0019569397;
 				};
-				class Item17
+				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3695.5815,11.125594,13146.122};
-						angles[]={0,4.9080701,0};
+						position[]={3695.5813,11.125904,13146.122};
+						angles[]={0,4.9080753,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						init="this addAction [""Hinsetzen"",""scripts\sitdown.sqf"",[],10,true,true,'',""(!(player getVariable 'QS_seated')) && (abs(speed player) < 1)""];";
 					};
 					id=1448;
 					type="Land_ChairWood_F";
-					atlOffset=0.0019569397;
+					atlOffset=0.0022668839;
 				};
-				class Item18
+				class Item17
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12207,7 +12191,7 @@ class Mission
 					type="Land_Poster_01_F";
 					atlOffset=2.393877;
 				};
-				class Item19
+				class Item18
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12223,7 +12207,7 @@ class Mission
 					id=1420;
 					type="MapBoard_altis_F";
 				};
-				class Item20
+				class Item19
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12239,7 +12223,7 @@ class Mission
 					id=1465;
 					type="Land_InfoStand_V1_F";
 				};
-				class Item21
+				class Item20
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12255,7 +12239,7 @@ class Mission
 					id=1470;
 					type="Land_CampingChair_V2_F";
 				};
-				class Item22
+				class Item21
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12271,7 +12255,7 @@ class Mission
 					type="Land_CampingChair_V2_F";
 					atlOffset=0.66676331;
 				};
-				class Item23
+				class Item22
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12287,7 +12271,7 @@ class Mission
 					type="Land_CampingChair_V2_F";
 					atlOffset=0.67166233;
 				};
-				class Item24
+				class Item23
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12305,7 +12289,7 @@ class Mission
 				};
 			};
 			id=1460;
-			atlOffset=0.019598961;
+			atlOffset=0.019600868;
 		};
 		class Item390
 		{
@@ -39722,6 +39706,22 @@ class Mission
 			id=1604;
 			type="Land_Kiosk_papers_F";
 			atlOffset=-0.017895699;
+		};
+		class Item403
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3698.3118,11.798712,13145.997};
+				angles[]={0,1.6091646,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1619;
+			type="Land_OfficeChair_01_F";
 		};
 	};
 };
