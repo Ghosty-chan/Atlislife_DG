@@ -33,7 +33,7 @@ switch (playerSide) do {
                 player setObjectTextureGlobal [0, "textures\civilian_uniform_7.jpg"];
             };
         };
-		if(!isNull (unitBackpack player)) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		if (backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
     };
 
     case west: {
@@ -46,7 +46,7 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
-		if(!isNull (unitBackpack player)) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		if (backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
     }; 
 
     case independent: {

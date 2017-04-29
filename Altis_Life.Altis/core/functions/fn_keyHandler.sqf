@@ -54,6 +54,14 @@ if (life_container_active) then {
     true;
 };
 
+//Sitdown Script
+ if (_code in (actionKeys "MoveForward")) then {
+	if (!isNull life_sitting) then {
+		[] execVM "scripts\standup.sqf";
+		_handled = true;
+	};
+};
+
 switch (_code) do {
     // -- Disable commander/tactical view
     if (LIFE_SETTINGS(getNumber,"disableCommanderView") isEqualTo 1) then {
