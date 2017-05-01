@@ -57,7 +57,7 @@ if (life_container_active) then {
 //Sitdown Script
  if (_code in (actionKeys "MoveForward")) then {
 	if (!isNull life_sitting) then {
-		[] execVM "scripts\standup.sqf";
+		[] execVM "scripts\player\standup.sqf";
 		_handled = true;
 	};
 };
@@ -134,7 +134,7 @@ switch (_code) do {
     //Restraining (Shift + R)
     case 19: {
         if (_shift) then {_handled = true;};
-        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 2}) then {
             [] call life_fnc_restrainAction;
         };
     };

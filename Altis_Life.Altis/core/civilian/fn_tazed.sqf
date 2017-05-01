@@ -17,11 +17,11 @@ if(_shooter isKindOf "Man" && alive player) then {
     if(!life_istazed) then {
         life_istazed = true;
         "DynamicBlur" ppEffectEnable true;
-        "DynamicBlur" ppEffectAdjust [20];
+        "DynamicBlur" ppEffectAdjust [5];
         "DynamicBlur" ppEffectCommit 1;
         player allowDamage false;
         if(isNull objectParent player) then {
-            for [{_x=1},{_x<=10},{_x=_x+1}] do { call SOCK_fnc_tazeRagdoll; sleep 0.1; if(animationState player == "unconscious") exitWith{}};
+            for [{_x=1},{_x<=10},{_x=_x+1}] do { call SOCK_fnc_tazeRagdoll; sleep 0.5; if(animationState player == "unconscious") exitWith{}};
         };
         //[_unit] remoteExecCall ["life_fnc_tazeSound",RCLIENT];
         [0,"STR_NOTF_Tazed",true,[profileName, _shooter getVariable["realname",name _shooter]]] remoteExecCall ["life_client_fnc_broadcast",-2];
@@ -39,8 +39,12 @@ if(_shooter isKindOf "Man" && alive player) then {
         life_istazed = false;
         disableUserInput false;
         player playMoveNow "amovppnemstpsraswrfldnon";
-    player setFatigue 1; //no running for you
-    player setdamage 0.6; //especially no running for you
+        // if enable_fatigue in config_master is enabled then u no run, otherwise get damaged.
+        if (enable_fatigue) {
+        player setFatigue 1; //no running for you
+        } else {
+        player setdamage 0.6; //especially no running for you
+        };  
     };
 } else {
     _unit allowDamage true;
