@@ -60,12 +60,14 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
+            /*
             class LastPos {
                 displayName = $STR_SP_Last_Pos;
                 spawnMarker = ""; //needs to be grabbed from DB
                 icon = "";
                 conditions = "call life_is_alive > 0"
             };
+            */
         };
 
         class Cop {
