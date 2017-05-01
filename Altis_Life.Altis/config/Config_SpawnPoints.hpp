@@ -16,7 +16,7 @@ class CfgSpawnPoints {
                 displayName = "Kavala";
                 spawnMarker = "civ_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "!license_civ_rebel";
+                conditions = "";
             };
 
             class Athira {
@@ -59,6 +59,12 @@ class CfgSpawnPoints {
                 spawnMarker = "Rebelop_2";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
+            };
+            class LastPos {
+                displayName = $STR_SP_Last_Pos;
+                spawnMarker = ""; //needs to be grabbed from DB
+                icon = "";
+                conditions = "call life_is_alive > 0"
             };
         };
 

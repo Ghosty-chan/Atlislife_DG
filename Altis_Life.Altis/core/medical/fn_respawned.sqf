@@ -41,6 +41,7 @@ switch (playerSide) do
 };
 
 //Cleanup of weapon containers near the body & hide it.
+/*
 if (!isNull life_corpse) then {
     private "_containers";
     life_corpse setVariable ["Revive",true,true];
@@ -48,6 +49,7 @@ if (!isNull life_corpse) then {
     {deleteVehicle _x;} forEach _containers; //Delete the containers.
     deleteVehicle life_corpse;
 };
+*/
 
 //Destroy our camera...
 life_deathCamera cameraEffect ["TERMINATE","BACK"];

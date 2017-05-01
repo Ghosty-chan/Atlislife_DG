@@ -1,4 +1,4 @@
-#include "..\script_macros.hpp"
+#include "..\..\script_macros.hpp"
 /*
  File: sitdown.sqf
  Author: John "Paratus" VanderZwet
@@ -13,10 +13,10 @@ _unit = _this select 1;
 
 if (!isNull life_sitting) exitWith { hint "Du sitzt bereits!" };
 if (vehicle _unit != _unit) exitWith { hint "Du sitzt hier schon!" };
-if (_unit distance _chair > 4) exitWith { hint "Ich hoffe, du hast genug platz?" };
+if (_unit distance _chair > 4) exitWith { hint "Ich hoffe du hast genug Platz?" };
 if (_unit getVariable ["restrained",false]) exitWith {};
 if (_unit getVariable ["isTazed",false]) exitWith {};
-if (!isNull (_chair getVariable ["sitting", objNull])) exitWith { hint "Birinin ustune oturmayi mi dusunuyorsunuz?!"; };
+if (!isNull (_chair getVariable ["sitting", objNull])) exitWith { hint "Ich dachte Sie würden sitzen?!"; };
 
 _dir = switch (typeOf _chair) do {
 	case "Land_ChairPlastic_F": { 270 };
@@ -41,7 +41,7 @@ life_sitting = _obj;
 
 _chair setVariable ["sitting", _unit, true];
 [_unit,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-_action = _unit addAction ["<t color='#B45F04'>Hinsetzen</t>","scripts\standup.sqf"];
+_action = _unit addAction ["<t color='#B45F04'>Hinsetzen</t>","scripts\player\standup.sqf"];
 
 waitUntil { isNull life_sitting || !(alive _unit) || player distance (getPos _chair) > 2 };
 
