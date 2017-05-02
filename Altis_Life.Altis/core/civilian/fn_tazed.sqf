@@ -40,7 +40,7 @@ if(_shooter isKindOf "Man" && alive player) then {
         disableUserInput false;
         player playMoveNow "amovppnemstpsraswrfldnon";
         // if enable_fatigue in config_master is enabled then u no run, otherwise get damaged.
-        if (enable_fatigue) {
+        if (!LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {
         player setFatigue 1; //no running for you
         } else {
         player setdamage 0.6; //especially no running for you
@@ -48,5 +48,5 @@ if(_shooter isKindOf "Man" && alive player) then {
     };
 } else {
     _unit allowDamage true;
-    life_iztazed = false;
+    life_istazed = false;
 };
