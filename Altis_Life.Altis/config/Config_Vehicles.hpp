@@ -11,10 +11,10 @@ class CarShops {
     *                "call life_coplevel && license_civ_someLicense"
     *            This will also let you call any other function.
     *
-    *   BLUFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
-    *   OPFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_EAST
-    *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
-    *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
+    *   BLUFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_Cfgvehicles_WEST
+    *   OPFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_Cfgvehicles_EAST
+    *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_Cfgvehicles_GUER
+    *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_Cfgvehicles_CIV
     */
     class civ_car {
         side = "civ";
@@ -171,7 +171,7 @@ class CarShops {
     };
 };
 
-class LifeCfgVehicles {
+class LifeCfgvehicles {
     /*
     *    Vehicle Configs (Contains textures and other stuff)
     *
@@ -396,7 +396,53 @@ class LifeCfgVehicles {
         vItemSpace = 200;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
         price = 200000;
-        textures[] = {};
+        textures[] = { 
+            { "Camo", "cop", {
+                "textures/cop/vehicles/gh/gh_pol1.jpg",
+                "textures/cop/vehicles/gh/gh_pol2.jpg"
+            }, "" },
+            { "GSGA", "cop", {
+                "textures/cop/vehicles/gh/gh_gsga1.jpg",
+                "textures/cop/vehicles/gh/gh_gsga2.jpg"
+            }, "" }
+        };
+    };
+
+    class I_Heli_light_03_F {
+        vItemSpace = 200;
+        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
+        price = 850000;
+        textures[] = { 
+            { "GSGA", "cop", {
+                "textures/cop/vehicles/police_hellcat.jpg"
+            }, "" }
+        };
+    };
+
+    class I_Heli_light_03_unarmed_F {
+        vItemSpace = 200;
+        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)} || {license_med_mAir}";
+        price = 550000;
+        textures[] = { 
+            { "GSGA", "cop", {
+                "textures/cop/vehicles/police_hellcat.jpg"
+            }, "" },
+            { "Medic", "med", {
+                "textures/med/vehicles/med_hellcat.jpg"
+            }, "" }
+        };
+    };
+
+    class I_Heli_Transport_02_F {
+        vItemSpace = 200;
+        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
+        price = 450000;
+        textures[] = { 
+            { "GSGA", "cop", {
+                "textures/cop/vehicles/police_mohawk_1.jpg",
+                "textures/cop/vehicles/police_mohawk_2.jpg"
+            }, "" }
+        };
     };
 
     class B_MRAP_01_hmg_F {
@@ -542,8 +588,11 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
+            { "Medic", "med", {
+                "textures/med/vehicles/offroad_notarzt.jpg"
+            }, "" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures/cop/vehicles/police_offroad.jpg"
             }, "" }
         };
     };
@@ -591,7 +640,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures/cop/vehicles/police_slimousine.jpg"
             }, "" }
         };
     };
@@ -715,7 +764,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+                "textures/cop/vehicles/police_suv.jpg"
+            }, "" },
+            { "Medic", "med", {
+                "textures/med/vehicles/suv_medik.jpg"
             }, "" }
         };
     };
@@ -754,8 +806,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 30000;
         textures[] = {
             { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                "textures/cop/vehicles/hunter/polizei_hunter1.jpg",
+                "textures/cop/vehicles/hunter/polizei_hunter2.jpg"
+            }, "" },
+            { "GSGA", "cop", {
+                "textures/cop/vehicles/hunter/hunter_GSG9.jpg",
+                "textures/cop/vehicles/hunter/hunter_GSGA_plane.jpg"
+            }, "" },
+            { "Medic", "med", {
+                "textures/med/vehicles/hunter_med_mrap_01.jpg",
+                "textures/med/vehicles/hunter_med_mrap_02.jpg"
             }, "" }
         };
     };
@@ -776,8 +836,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 245000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+            { "Police 1", "cop", {
+                "textures/cop/vehicles/police_heli.jpg"
+            }, "" },
+            { "Police 2", "cop", {
+                "textures/cop/vehicles/police_heli2.jpg"
             }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -819,7 +882,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
             { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+                "textures/med/vehicles/Notarzt_Hummingbird.jpg"
             }, "" }
         };
     };
@@ -846,8 +909,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Medic", "med", {
+                "textures/med/vehicles/med_orca.jpg"
             }, "" }
         };
     };

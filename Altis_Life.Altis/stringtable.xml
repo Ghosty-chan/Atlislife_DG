@@ -6968,6 +6968,14 @@
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
         </Key>
+        <Key ID="STR_Item_ZipTies">
+            <Original> ZipTies </Original>
+            <German> Kabelbinder </German>
+        </Key>
+        <Key ID="STR_Item_Blindfold">
+            <Original>Blindfold</Original>
+            <German> Augenbinde </German>
+        </Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">

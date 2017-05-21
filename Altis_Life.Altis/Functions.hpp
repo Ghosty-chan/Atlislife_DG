@@ -107,6 +107,19 @@ class Life_Client_Core {
         class tazed {};
     };
 
+    class CivTieing {
+        file = "core\civilian\CivTieing";
+        class gagAction {};                 
+        class gagged {};
+        class removeGagAction {};
+        class tieing {};
+        class tieingAction {};
+        class tieingActionb {};
+        class tieingb {};
+        class untie {};
+        class untieb {};
+    };
+
     class Config {
         file = "core\config";
         class houseConfig {};
@@ -143,6 +156,7 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+        class teargas {};
     };
 
     class Dialog_Controls {

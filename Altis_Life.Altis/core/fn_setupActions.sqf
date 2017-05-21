@@ -27,5 +27,5 @@ switch (playerSide) do {
 };
 
 	// Better cuz only 1 line for 3 everyone. :D
-	life_actions pushBack (player addAction["<t color='#0099FF'>Hinsetzen</t>",{[cursorObject,player] execVM "scripts\player\sitdown.sqf"},true,1,true,true,"""",'player distance cursorObject < 3 && {([str cursorObject,"bench"] call KRON_StrInStr || [str cursorObject,"chair"] call KRON_StrInStr)} ']);
+	life_actions = life_actions + [player addAction["<t color='#0099FF'>Hinsetzen</t>",{[cursorObject,player] execVM "scripts\player\sitdown.sqf"},true,1,true,true,"""",'player distance cursorObject < 3 && {([str cursorObject,"bench"] call KRON_StrInStr || [str cursorObject,"chair"] call KRON_StrInStr)} ']];
 

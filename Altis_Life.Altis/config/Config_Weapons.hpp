@@ -175,6 +175,7 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
+            { "SmokeShellYellow", "Tear Gas", 150, 50, "" },
             { "ToolKit", "", 150, 75, "" },
             { "Medikit", "", 150, 75, "call life_coplevel >= 4" },
             { "B_UAV_01_backpack_F", "", 150, 75, "call life_coplevel >= 4" },
